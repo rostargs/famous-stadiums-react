@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./NavItem.scss";
 
-const NavItem = ({ name, sectionRef, ...props }) => {
+const NavItem = ({ name, path, ...props }) => {
     return (
         <li key={name} className="nav-item" {...props}>
-            <a href={`#${sectionRef}`}>{name}</a>
+            <Link to={path} onClick={() => window.scrollTo({ top: 0 })}>
+                {name}
+            </Link>
         </li>
     );
 };

@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import Navigation from "../Navigation/Navigation";
 import { navigation } from "../../data";
 import NavItem from "../NavList/NavItem";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const screenWidth = useMediaQuery();
@@ -23,9 +24,9 @@ const Header = () => {
             <header className="header">
                 <Container>
                     <div className="header__content">
-                        <a href="/">
+                        <Link to="/" onClick={() => setMenu(false)}>
                             <img src={stadium} alt="Football Stadium" className="header__logo" />
-                        </a>
+                        </Link>
                         <nav className="header__navigation">
                             {screenWidth >= 768 ? (
                                 <ul>
