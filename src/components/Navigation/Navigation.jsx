@@ -5,7 +5,7 @@ import NavItem from "../NavList/NavItem";
 
 const Navigation = ({ isVisible, setMenu }) => {
     return (
-        <div className={`navigation ${isVisible ? "navigation--visible" : ""}`}>
+        <div className={`navigation ${isVisible && "navigation--visible"}`}>
             <Container>
                 <div className="navigation__content">
                     <ul>

@@ -50,6 +50,7 @@ const nivaPageContent = [
         id: "gallery",
     },
 ];
+
 const gifPageContent = [
     {
         title: "GIF-анімація",
@@ -58,6 +59,7 @@ const gifPageContent = [
         id: "gif",
     },
 ];
+
 const attributesPageContent = [
     {
         title: "Електронне табло",
